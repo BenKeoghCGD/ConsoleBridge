@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ConsoleBridge (BUNGEE)">
+    <output-path>$USER_HOME$/Desktop/SERVERS/Bungeecord/plugins</output-path>
+    <root id="archive" name="ConsoleBridge.jar">
+      <element id="module-output" name="ConsoleBridge" />
+    </root>
+  </artifact>
+</component>

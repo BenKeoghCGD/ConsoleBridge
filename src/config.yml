@@ -1,0 +1,47 @@
+#---------------+ ConsoleBridge +---------------#
+# ConsoleBridge v0.4 -- Full release config.yml #
+#-----------------------------------------------#
+# GLOBAL VARIABLES -                            #
+# 1 - %SERVER% - SERVER NAME OF CHAT MESSAGE    #
+# 2 - %PLAYER_NAME% - NAME OF MESSAGE SENDER    #
+#                                               #
+# FORMAT-SPECIFIC VARIABLES
+# 1 - %MESSAGE% - MESSAGE SENT BY PLAYER        #
+# 2 - %COMMAND% - COMMAND SENT BY PLAYER        #
+# 3 - %DEATH_MESSAGE% - PLAYER DEATH MESSAGE    #
+#-----------------------------------------------#
+
+#################################################
+#              SECTION 1 - Formats              #
+#################################################
+
+  ## Chat-Format is the format of the chat displayed on bungeecord console. e.g.
+  ### EXAMPLE:
+  ### Chat-Format: "[%SERVER%] %PLAYER_NAME% > %MESSAGE%"
+  ### OUTPUT - [Lobby] Fubbo > Hello World.
+Format-Chat: "[%SERVER%] %PLAYER_NAME% > %MESSAGE%"
+
+  ## Command-Format is the format of commands displayed on bungeecord console. e.g.
+  ### EXAMPLE:
+  ### Command-Format: "[%SERVER%] %PLAYER_NAME% issued server command: %COMMAND%"
+  ### OUTPUT - [Lobby] Fubbo issued server command: /abc
+Format-Command: "[%SERVER%] %PLAYER_NAME% issued server command: %COMMAND%"
+
+  ## Death-Format is the format of death messages displayed on bungeecord console. e.g.
+  ### EXAMPLE:
+  ### Command-Format: "[%SERVER%] %PLAYER_NAME% died: %DEATH_MESSAGE%"
+  ### OUTPUT - [Lobby] Fubbo died: Fubbo hit the ground too hard
+Format-Death: "[%SERVER%] %PLAYER_NAME% died: %DEATH_MESSAGE%"
+
+#################################################
+#              SECTION 1 - Displays             #
+#################################################
+
+  ## If 'Chat' is set to true, player chat messages will be shown in bungeecord console
+Enabled-Chat: true
+
+  ## If 'Command' is set to true, player commands will be shown in bungeecord console
+Enabled-Command: true
+
+  ## If 'Death' is set to true, player deaths will be shown in bungeecord console
+Enabled-Death: true
